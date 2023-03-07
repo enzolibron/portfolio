@@ -32,11 +32,11 @@ body {
   color: #7477ff;
 }
 
-nav li a {
+nav li button {
   @apply px-4 py-5 text-lg;
 }
 
-nav li a:hover {
+nav li button:hover {
   color: #7477ff;
 }
 

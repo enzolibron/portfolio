@@ -7,33 +7,50 @@ const Header = () => {
 
   const handleToggle = () => setToggle(!toggle);
 
+  const handleClickScroll = (e) => {
+    const element = document.getElementById(e);
+
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    handleToggle();
+  };
+
   return (
     <header className="flex justify-between px-5 py-2 bg-secondery fixed w-full z-10">
-      <a href="/">
+      <button onClick={() => handleClickScroll('hero')}>
         <img src={laptop} className="laptop-logo" alt="" />
-      </a>
+      </button>
 
       {/* Desktop Nav */}
       <nav className="hidden md:block">
         <ul className="flex">
           <li>
-            <a href="/portfolio/#about">About</a>
+            <button onClick={() => handleClickScroll('about')}>About</button>
+          </li>
+
+          <li>
+            <button onClick={() => handleClickScroll('projects')}>
+              Projects
+            </button>
           </li>
           <li>
-            <a href="/portfolio/#projects">Projects</a>
+            <button onClick={() => handleClickScroll('contact')}>
+              Contact
+            </button>
           </li>
           <li>
-            <a href="/portfolio/#contact">Contact</a>
-          </li>
-          <li>
-            <a
-              href="https://drive.google.com/file/d/1Tzb0_CRURH07BFHl2gCJxa89PW4Lr84n/view"
-              target="_blank"
-              without
-              rel="noreferrer"
-            >
-              Resume
-            </a>
+            <button>
+              <a
+                href="https://drive.google.com/file/d/1Tzb0_CRURH07BFHl2gCJxa89PW4Lr84n/view"
+                target="_blank"
+                without
+                rel="noreferrer"
+              >
+                Resume
+              </a>
+            </button>
           </li>
         </ul>
       </nav>
@@ -44,26 +61,30 @@ const Header = () => {
       >
         <ul className="flex flex-col">
           <li>
-            <a href="/portfolio/#about">About</a>
+            <button onClick={() => handleClickScroll('about')}>About</button>
+          </li>
+
+          <li>
+            <button onClick={() => handleClickScroll('projects')}>
+              Projects
+            </button>
           </li>
           <li>
-            <a href="/portfolio/#projects">Projects</a>
+            <button onClick={() => handleClickScroll('contact')}>
+              Contact
+            </button>
           </li>
           <li>
-            <a href="/portfolio/#blog">Blog</a>
-          </li>
-          <li>
-            <a href="/portfolio/#contact">Contact</a>
-          </li>
-          <li>
-            <a
-              href="https://drive.google.com/file/d/1Tzb0_CRURH07BFHl2gCJxa89PW4Lr84n/view"
-              target="_blank"
-              without
-              rel="noreferrer"
-            >
-              Resume
-            </a>
+            <button>
+              <a
+                href="https://drive.google.com/file/d/1Tzb0_CRURH07BFHl2gCJxa89PW4Lr84n/view"
+                target="_blank"
+                without
+                rel="noreferrer"
+              >
+                Resume
+              </a>
+            </button>
           </li>
         </ul>
       </nav>
