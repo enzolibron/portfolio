@@ -14,8 +14,7 @@ const About = () => {
           </p>
           <p className="pb-5">
             I am a self taught. I taught myself technologies like ReactJS,
-            Redux, Redux Tool Kit, Axios, Tailwind CSS, NodeJS, ExpressJS and
-            many more.
+            Redux, Axios, Tailwind CSS, NodeJS, ExpressJS and many more.
           </p>
 
           <p>

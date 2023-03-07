@@ -1,4 +1,5 @@
 import React from 'react';
+import { AiOutlineGithub } from 'react-icons/ai';
 
 const Contact = () => {
   return (
@@ -8,7 +9,7 @@ const Contact = () => {
           Contact Me
         </h2>
         <p>
-          I am currently open for a fulltime Frontend Developer role. If you
+          I am currently open for a fulltime fullstack developer role. If you
           want to discuss about that feel free to email me or call me.
         </p>
 
@@ -18,6 +19,15 @@ const Contact = () => {
         <p className="py-2">
           <span className="font-bold">Phone:</span> +63 956 087 2280
         </p>
+        <div className="justify-center flex py-5 ">
+          <a
+            href="https://github.com/enzolibron"
+            className="inline-block text-accent hover:text-black"
+          >
+            {' '}
+            <AiOutlineGithub size={40} />{' '}
+          </a>
+        </div>
       </div>
     </section>
   );

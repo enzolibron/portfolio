@@ -14,7 +14,9 @@ const Header = () => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
 
-    handleToggle();
+    if (toggle) {
+      handleToggle();
+    }
   };
 
   return (

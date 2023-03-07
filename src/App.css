@@ -17,19 +17,19 @@ body {
 
 /* color */
 .bg-primary {
-  background: #ffffff;
+  background: #fffffa;
 }
 
 .bg-secondery {
-  background: #fffffc;
+  background: #ffffff;
 }
 
 .bg-accent {
-  background: #7477ff;
+  background: #7477fa;
 }
 
 .text-accent {
-  color: #7477ff;
+  color: #7477fa;
 }
 
 nav li button {
@@ -37,7 +37,7 @@ nav li button {
 }
 
 nav li button:hover {
-  color: #7477ff;
+  color: #7477fa;
 }
 
 .mobile-nav {

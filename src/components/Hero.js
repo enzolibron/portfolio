@@ -1,11 +1,6 @@
 import React from 'react';
 import HeroImg from '../assets/hero-img.png';
-
-import {
-  AiOutlineTwitter,
-  AiOutlineYoutube,
-  AiOutlineFacebook,
-} from 'react-icons/ai';
+import { AiOutlineGithub } from 'react-icons/ai';
 
 const Hero = () => {
   return (
@@ -17,37 +12,16 @@ const Hero = () => {
             <br />
             Fullstack Developer.
           </h1>
-          {/* 
+
           <div className="flex py-5 ">
             <a
-              href="https://twitter.com/CoderAmrin"
-              className="pr-4 inline-block text-accent hover:text-white"
+              href="https://github.com/enzolibron"
+              className="pr-4 inline-block text-accent hover:text-black"
             >
               {' '}
-              <AiOutlineTwitter size={40} />{' '}
-            </a>
-            <a
-              href="https://www.youtube.com/@coderamrin"
-              className="pr-4 inline-block text-accent hover:text-white"
-            >
-              {' '}
-              <AiOutlineYoutube size={40} />{' '}
-            </a>
-            <a
-              href="https://www.facebook.com/CoderAmrin/"
-              className="pr-4 inline-block text-accent hover:text-white"
-            >
-              {' '}
-              <AiOutlineFacebook size={40} />{' '}
+              <AiOutlineGithub size={40} />{' '}
             </a>
           </div>
-
-          <a
-            href="/#projects"
-            className=" btn bg-accent border-2 border-[#7477FF] px-6 py-auto hover:bg-transparent"
-          >
-            See Projects
-          </a> */}
         </div>
 
         <div className="hero-img">
