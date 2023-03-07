@@ -17,7 +17,7 @@ const Hero = () => {
             <br />
             Fullstack Developer.
           </h1>
-
+          {/* 
           <div className="flex py-5 ">
             <a
               href="https://twitter.com/CoderAmrin"
@@ -47,7 +47,7 @@ const Hero = () => {
             className=" btn bg-accent border-2 border-[#7477FF] px-6 py-auto hover:bg-transparent"
           >
             See Projects
-          </a>
+          </a> */}
         </div>
 
         <div className="hero-img">
